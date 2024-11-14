@@ -35,3 +35,8 @@ nav ul li a {
 main {
     padding-top: 60px; /* Add padding to avoid content being hidden behind the fixed nav */
 }
+
+h1{
+    text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
