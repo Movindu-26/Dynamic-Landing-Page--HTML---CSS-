@@ -9,14 +9,7 @@
 <body>
     <header>
         <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <nav id="navbar"></nav>
     </header>
     <main>
         <section id="home">
@@ -36,8 +29,27 @@
             <p>This is the contact section of the website.</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 My Website</p>
-    </footer>
+    <script>
+        const navItems = [
+            { id: 'home', text: 'Home' },
+            { id: 'about', text: 'About' },
+            { id: 'services', text: 'Services' },
+            { id: 'contact', text: 'Contact' }
+        ];
+
+        const navbar = document.getElementById('navbar');
+        const ul = document.createElement('ul');
+
+        navItems.forEach(item => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = `#${item.id}`;
+            a.textContent = item.text;
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+
+        navbar.appendChild(ul);
+    </script>
 </body>
 </html>
