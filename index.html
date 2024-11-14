@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="icon" href="images/cake.png">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav id="navbar"></nav>
+        <div class="header-container">
+            <!-- Logo aligned to the left -->
+            <img src="images/cake.png" alt="Logo" class="logo">
+            <!-- Navigation bar aligned to the right -->
+            <nav id="navbar"></nav>
+        </div>
     </header>
+    
     <main>
+        <video autoplay muted loop id="bgvid">
+            <source src="images/cakevid1.mp4" type="video/mp4">
+        </video>
+
+        <!-- Main content -->
+        <h1>Welcome to My Website</h1>
+
         <section id="home">
             <h2>Home</h2>
             <p>This is the home section of the website.</p>
@@ -29,6 +42,7 @@
             <p>This is the contact section of the website.</p>
         </section>
     </main>
+
     <script>
         const navItems = [
             { id: 'home', text: 'Home' },
