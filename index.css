@@ -7,7 +7,7 @@ body {
     padding: 0;
     background: url('images/front-view-delicious-chocolate-cake-concept (1).jpg') no-repeat center center ; /* Set the background image */
     background-size: cover; /* Ensure the image covers the entire page */
-    height: 100vb; /* Ensure the body takes full viewport height */
+    height: 80vh; /* Ensure the body takes full viewport height */
     position: relative; /* To position the overlay correctly */
 }
 
@@ -35,7 +35,6 @@ nav {
     justify-content: flex-end; /* Align navigation to the right */
     flex-grow: 1;
     margin-right: 5%;
-    
 }
 
 nav ul {
@@ -91,9 +90,4 @@ main {
     z-index: -1;
     object-fit: cover; /*
     filter: brightness(48%); */
-}
-
-nav.scrolled {
-    background-color: rgba(0, 0, 0, 0.7); /* Darkens the navbar with some transparency */
-    transition: background-color 0.3s ease; /* Smooth transition */
 }
